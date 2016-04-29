@@ -1,0 +1,469 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #33532A;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+body {
+    font: 16px/26px Muli, Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.header-container{
+    background: whitesmoke;
+}
+
+.title {
+    color: #599B42;
+}
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body, .main-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    position: absolute;
+    z-index: 100;
+    margin: 10px 0 0 0;
+    padding: 13px 12px;
+}
+.cover-all {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(25,25,25,.6);
+    z-index: 24;
+    display: none;
+}
+.why-this-matters {
+    position: absolute;
+    bottom: 22px;
+    right: 24%;
+    z-index: 22;
+    font-size: 1.3em;
+    box-shadow: 0 1px 5px rgba(53,112,54,.65);
+    background: rgba(53,112,54,.80);
+}
+.meaning {
+    width: 60%;
+/*    min-height: 450px;*/
+    background: rgb(193,205,193);
+    position: absolute;
+    z-index: 800;
+    left: 18%;
+    top: 40px;
+    padding: 20px 2%;
+    display: none;
+ }
+.close-meaning {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: rgb(49,79,79);
+}
+.meaning p {
+   rgb(49,79,79);
+}
+#map {
+    width: 80%;
+    height: 100%;
+    z-index: 8;
+}
+#current-goal-controls {
+    font-family: Muli;
+}
+#charts {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    background: whitesmoke;
+    width: 20%;
+    overflow-y: scroll;
+}
+#charts canvas {
+    width: 90%;
+    height: 130px;
+    margin: 2px 0 0 0;
+    padding: 0;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+}
+#charts label {
+    color: #33532A;
+    float: right;
+    margin-right: 10px;
+}
+#charts label button {
+    font-size: 1em;
+    padding: 4px 9px;
+    margin: 5px 10px 0 0;
+}
+.about {
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 80px;
+    padding: 0 8px 15px;
+    width: 400px;
+    background: rgba(255,255,255,.4);
+/*
+    border: rgba(53,112,54,0.8); 
+    border-width: thick;
+    box-shadow: 0 1px 5px rgba(53,112,54,.65);
+*/
+}
+.about p {
+    font-weight: 350;
+    line-height: 1.2em;
+    margin: 6px 0 8px;
+}
+.description {
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 50%;
+    bottom: 10px;
+    padding: 0 8px;
+    width: 318px;
+    max-height: 55%;
+    overflow-y: scroll;
+    background: whitesmoke;
+    box-shadow: 0 1px 5px rgba(53,112,54,.65);
+    display: none;
+}
+.description h2 {
+    font-size: 1.2em;
+    margin: 8px 0 0;
+}
+.treeCanopyKey {
+    display: block;
+}
+#legend {
+    background: whitesmoke;
+    box-shadow: 0 1px 5px rgba(53,112,54,.65);
+    padding: 6px 8px;
+    border-radius: 4px;
+    width: 200px;
+    z-index: 10;
+}
+#legend h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    line-height: 1em;
+    color: #33532A;
+    margin: 10px 0 0;
+}
+#legend button {
+    font-size: 1.3em;
+    padding: 4px 9px;
+    width: 48%;
+    color: #3d3d3d;
+}
+#hover-window {
+    background: whitesmoke;
+    box-shadow: 0 1px 5px rgba(0,0,0,.65);
+    padding: 6px 8px;
+    border-radius: 4px;
+    min-height: 40px;
+    min-width: 60px;
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+.leaflet-control-geosearch {*/
+    box-shadow: 0 1px 5px rgba(0,0,0,.65);
+    width: 264px;
+    z-index: 10;
+}
+.leaflet-control-geosearch input {
+    width: 96%; 
+    padding: 6px 8px;
+/*    background: 'red';*/
+/*    border: 11 solid #A0A0A0;*/
+    border: 4px solid rgba(53,112,54,0.8);
+    color: #A0A0A0;
+}
+.leaflet-control-geosearch-msg ul {
+    list-style: none;
+    display: none;
+    height: auto;
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: -220%;
+    z-index: 200;
+    background: #d48983;
+}
+.leaflet-control-geosearch ul li {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font: 2em "Ubuntu";
+    color: whitesmoke;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 40%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+        font-size: 3.7em;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 100%; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
