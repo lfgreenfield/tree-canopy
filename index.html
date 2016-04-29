@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tree Canopy Map</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!--        <link rel="stylesheet" href="css/normalize.min.css">-->
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        
+      
+    </head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <h1 class="title">Explore Tree Canopy</h1>
+    <div id='legend'>
+        <div id="current-goal-controls">
+            <button id='current'>current </button>
+            <button id='goal'>goal</button>
+        </div>
+         <h3></h3>
+        <svg height="110"></svg>
+    </div>
+    <div id='hover-window'></div>
+    <div id="charts">
+<!--        <h2>Benefits per Council District</h2>-->
+        <label id='treeCanopyLabel' data-key="treeCanopyKey"><button>tree canopy cover</button></label>
+        <canvas id="treeCanopy"></canvas>
+        <label id='propsLabel' data-key="propertyKey"><button>property value increase</button></label>
+        <canvas id="prop-vals"></canvas>
+        <label id='pollutantsLabel' data-key="pollutantsKey"><button>air quality</button></label>
+        <canvas id="pollutants"></canvas>
+        <label id='stormwaterLabel' data-key="stormwaterKey"><button>stormwater retention</button></label>
+        <canvas id="stormwater"></canvas>
+        <label id='carbonLabel' data-key="carbonKey"><button>carbon storage and sequestration</button></label>
+        <canvas id="carbon"></canvas>
+    </div>
+    
+    <div class='about'>
+    <p><b>Switch</b> between Lexington's <b>current</b> canopy percent (25% overall) and <b>goal</b> (30% overall) to see how such a small change can make a huge impact.</p>
+    <p><b>Hover</b> over bar charts for canopy benefits per council district. Top number is current canopy, bottom is benefits with 5% increase</p>
+    <p><b>Search</b> an address to see where it falls within Lexington's canopy:</p>
+    </div>
+    <div class="description treeCanopyKey">
+        <h2>Tree Canopy Cover</h2>
+        <p>Tree canopies are great. Not just for beauty, but for property values, air quality, stormwater retention, and carbon storage and sequestration. Currently, Lexington has 25% canopy, which provides almost $50 million in annual benefits to Lexington. The Urban County Government is making a push to increase canopy to 30%. Take a look and explore how such a small increase of 5% can have a huge impact! Read more by clicking the "why this matters" button. </p>
+    </div>
+    <div class="description propertyKey">
+        <h2>Property Value Increase</h2>
+        <p>This map shows how tree canopy contributes to property value. Trees create an environment that we want to live in: shade, beauty, greenery, happiness, healthfulness. As we protect mature trees and plant new trees, values for any type of property increase at an average of 7%. Currently, trees contribute $240 million in property value. With a 5% canopy increase, this number would increase to $293 million. <b>Trees revive!</b></p>
+    </div>
+    <div class="description pollutantsKey">
+        <h2>Air Quality</h2>
+        <p>This map shows how tree canopy improves Lexington’s air quality. Trees absorb millions of pounds of pollutants from the air each year, including carbon monoxide (CO), nitrogen dioxide (NO2), ozone (O3), sulfur dioxide (SO2) and capture solid particulate matter like dust and soot on their leaves. As trees do this, air pollution rates in our city decrease, along with rates of heart and lung disease, asthma, and pulmonary and cardiovascular disease. Currently, trees remove 1.12 million  lbs of pollutants from the air each year, valued at $1.16 million. With a 5% canopy increase, canopy would remove $1.4 lbs of pollutants from our air, equating $1.41 million in value. <b>Trees clean the air!</b></p>
+    </div>
+     <div class="description stormwaterKey">
+         <h2>Stormwater Retention</h2>
+        <p>This map shows how trees reduce stormwater runoff. Trees directly absorb rainwater which helps slow down and decrease the amount of rainwater that reaches storm drains, which are susceptible to overflow. Trees also reduce soil erosion which prevents pollutants from entering nearby waterways. Currently, Lexington is under federal order to reduce the amount of sewer overflow in Fayette County’s streams. Currently, trees intercept 1.93 billion gallons of stormwater each year, a $15 million value. With a 5% increase, Lexington’s canopy would intercept 2.36 billion gallons, equating $18.32 million in value. <b>Trees reduce runoff,  flooding, and water pollution!</b></p>
+    </div>
+     <div class="description carbonKey">
+         <h2>Carbon Storage and Sequestration</h2>
+        <p>This map shows the amount of carbon dioxide (CO2) that Lexington’s trees store and sequester. Trees take carbon from the air and store massive amounts of it in their woody tissue. As they grow, this amount increases. CO2 is one of the major greenhouse gases and trees naturally reduce our city’s carbon footprint. Currently, Lexington’s trees store and sequester 1.74 million tons of carbon each year, valued at $33.68 million. With a 5% increase in canopy, 2.31 million ton of carbon would be stored and sequestered, valued at $41.11 million. <b>Trees help mitigate climate change!</b></p>
+    </div>
+    
+    <div id="map"></div>
+    <div class='meaning'>
+        <div class='close-meaning'>close</div>
+        <p><b>Why do trees and urban tree canopy matter?</b> Great question. And one with an incredible list of answers. Lexington’s Urban County Government (LFUCG) had an assessment completed in 2015: <a href="http://www.lexingtonky.gov/index.aspx?page=3412" target="_blank">The Urban Tree Canopy (UTC) Analysis</a>. In this study, Lexington’s current tree canopy (25%, totaling about 13,000 acres) and potential tree canopy were calculated, in addition to the benefits, called ecosystem services, which our city’s trees give us. </p>
+<p>The value of trees is phenomenal. Not only do they remove pollutants from the air, store carbon dioxide, reduce water pollution, and increase property values, they provide these benefits all at the same time and, as they grow and flourish, their value increases over time. Combined with acres and acres of other trees, they become a tool to manage environmental, health, social, and economic sustainability goals. Together, they create an urban forest which contributes to the beauty and character of Lexington and enhances the overall quality of the built environment.</p> 
+<p>So what do we do? We can <b>educate</b> about the real benefits of tree canopy in Lexington. We can <b>motivate</b> to help LFUCG with their 30% canopy goal, which is just an increase of 3,000 more acres of trees. We can share this map and the story that trees are doing real work to improve Lexington. And, of course, we can <b>plant more trees!</b></p>
+<p>Read the UTC report <a href="http://www.lexingtonky.gov/index.aspx?page=3412" target="_blank">here</a></p>
+<p>Read more about LFUCG’s urban forest efforts <a href="http://www.lexingtonky.gov/Modules/ShowDocument.aspx?documentid=26521" target="_blank">here</a></p>
+<!--        <p>For any questions or concerns related to this map, email lauragreenfield0@gmail.com. Data source: UTC report and author's own calculations</p>-->
+    </div>
+    <button class='why-this-matters'>why this matters</button>
+    <div class='cover-all'></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.min.js"></script>
+    <script src="js/l.control.geosearch.js"></script>
+    <script src="js/l.geosearch.provider.esri.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
