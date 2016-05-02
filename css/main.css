@@ -124,6 +124,9 @@ h1 {
 .meaning p {
    rgb(49,79,79);
 }
+.meaning p2{
+    line-height: 1.2em;
+}
 #map {
     width: 80%;
     height: 100%;
