@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 a90bec89f5501aec41d575b712dfdee46fcf7f07 lfgreenfield <lfgr225@g.uky.edu> 1461968399 -0400	clone: from https://github.com/lfgreenfield/tree-canopy.git
+a90bec89f5501aec41d575b712dfdee46fcf7f07 725513cc237b2c5c8d429dd421af8c3216eccec5 lfgreenfield <lfgr225@g.uky.edu> 1461968539 -0400	commit: map upload
+725513cc237b2c5c8d429dd421af8c3216eccec5 7978d25eab4782d66e359e04974ec670e830e3f6 lfgreenfield <lfgr225@g.uky.edu> 1461968640 -0400	checkout: moving from master to gh-pages
+7978d25eab4782d66e359e04974ec670e830e3f6 a90bec89f5501aec41d575b712dfdee46fcf7f07 lfgreenfield <lfgr225@g.uky.edu> 1461968646 -0400	pull --progress --rebase --prune origin gh-pages: checkout a90bec89f5501aec41d575b712dfdee46fcf7f07
+a90bec89f5501aec41d575b712dfdee46fcf7f07 a90bec89f5501aec41d575b712dfdee46fcf7f07 lfgreenfield <lfgr225@g.uky.edu> 1461968647 -0400	rebase finished: returning to refs/heads/gh-pages
+a90bec89f5501aec41d575b712dfdee46fcf7f07 5b1bf2be6bf492fd0cc2cfbb01b59bc846d7b122 lfgreenfield <lfgr225@g.uky.edu> 1461968764 -0400	commit: upload map
