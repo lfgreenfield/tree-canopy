@@ -242,7 +242,7 @@ function createPopup() {
                 goalVal = props[(allData[currentAttribute].goal)];      
       
             infoWindow.show();
-            infoWindow.html("<b>"+"District "+props.district+"</b><br>"+ description+ "<br>"+ "current value: "+currentVal + "<br>"+ "goal value: "+goalVal);
+            infoWindow.html("<b>"+"District "+props.district+"</b><br>"+ description+ "<br>"+ "current value: "+currentVal + "<br>"+ "goal value: "+goalVal +"<br>"+"contact your district's Council member, click 'why this matters'");
             
             $(document).mousemove(function(e){
                 // first offset from the mouse position of the info window
