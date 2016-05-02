@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 42d8e2f39fc9821ebbfca9b25c9682ee49181289 lfgreenfield <lfgr225@g.uky.edu> 1461420311 -0400	branch: Created from master
+42d8e2f39fc9821ebbfca9b25c9682ee49181289 571acdfaa563d5e4520801beb4e41e9a77439ec9 lfgreenfield <lfgr225@g.uky.edu> 1461422476 -0400	commit: data keys added
+571acdfaa563d5e4520801beb4e41e9a77439ec9 bd3def8c672f08a2521992cdd5d0cfa42276071b lfgreenfield <lfgr225@g.uky.edu> 1461427726 -0400	commit: import new data
+bd3def8c672f08a2521992cdd5d0cfa42276071b 7808b05b3f88fe9bf3a27bbff23a6027a8474e91 lfgreenfield <lfgr225@g.uky.edu> 1461432058 -0400	commit: continue work
+7808b05b3f88fe9bf3a27bbff23a6027a8474e91 c87e3e72464e779bdc7a3339d51713212753b6ad lfgreenfield <lfgr225@g.uky.edu> 1461434712 -0400	commit: add popups
+c87e3e72464e779bdc7a3339d51713212753b6ad 8b953efa8933e2fbf48ec9a21951a77ba1d2c777 lfgreenfield <lfgr225@g.uky.edu> 1461436505 -0400	commit: two versions of popups
+8b953efa8933e2fbf48ec9a21951a77ba1d2c777 e42a092046bfc6107c3730eac313dd11bca29b90 lfgreenfield <lfgr225@g.uky.edu> 1461436690 -0400	commit: add hover option
+e42a092046bfc6107c3730eac313dd11bca29b90 26aaa2fab741cc08b65ae7adb3979aa25db5d3ec lfgreenfield <lfgr225@g.uky.edu> 1461436892 -0400	commit: data descriptions added to popup
+26aaa2fab741cc08b65ae7adb3979aa25db5d3ec 0b96094b9951023b74644abce7e16ef09532c00d lfgreenfield <lfgr225@g.uky.edu> 1461437447 -0400	commit: add canopy attribute text
+0b96094b9951023b74644abce7e16ef09532c00d e0823aa6006caac3460daabb90cb66fc2d00b20e lfgreenfield <lfgr225@g.uky.edu> 1461581254 -0400	commit: legend element built w/ dynamic header (no content)
+e0823aa6006caac3460daabb90cb66fc2d00b20e feb6df9b671572cec1316f57c8c4705e5903e770 lfgreenfield <lfgr225@g.uky.edu> 1461582472 -0400	commit: legend work
+feb6df9b671572cec1316f57c8c4705e5903e770 89574bb7644238cdbe4527ae1897d2b6821779b7 lfgreenfield <lfgr225@g.uky.edu> 1461891010 -0400	commit: work
